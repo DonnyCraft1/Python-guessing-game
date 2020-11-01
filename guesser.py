@@ -27,10 +27,10 @@ def main():
                 print "You have guessed the correct number! You used", attempts, "attempts."
                 found = True  # declare found as true which ends the program
 
-            elif userGuess > randomNumber:  # if the user is less than the generated number
+            elif userGuess > randomNumber:  # if the user guessed a number greater than the generated number
                 print ("Guess lower!")
                 attempts = attempts + 1  # add one attempt to the counter
-            else:
+            else: # if the user guessed a number that is less than the generated number
                 print ("Guess higher!")
                 attempts = attempts + 1  # add one attempt to the counter
 
